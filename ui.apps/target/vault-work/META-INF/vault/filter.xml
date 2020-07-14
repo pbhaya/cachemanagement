@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/cache-management" />
+    <filter root="/apps/sling/servlet/errorhandler" />
+    <filter root="/conf/cache-management" mode="merge" />
+    <filter root="/etc/clientlibs/cache-management" />
+    <filter root="/etc/packages/adobe/consulting/acs-aem-commons-content-3.14.10.zip" />
+</workspaceFilter>

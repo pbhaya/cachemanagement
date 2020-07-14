@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Cache Management Content Package</comment>
+<entry key="createdBy">preetibhaya</entry>
+<entry key="name">cache-management.ui.apps</entry>
+<entry key="acHandling">merge_preserve</entry>
+<entry key="created">2020-07-14T18:43:19.245+0100</entry>
+<entry key="groupId">com.cacheManagement</entry>
+<entry key="version">0.0.1-SNAPSHOT</entry>
+<entry key="requiresRoot">false</entry>
+<entry key="group">cache-management</entry>
+<entry key="description">Maven Multimodule project for Cache Management.</entry>
+<entry key="artifactId">cache-management.ui.apps</entry>
+<entry key="path">/etc/packages/cache-management/cache-management.ui.apps.zip</entry>
+</properties>

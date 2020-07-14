@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1594748598307
+Build-Jdk: 1.8.0_144
+Built-By: preetibhaya
+Bundle-Description: Maven Multimodule project for Cache Management.
+Bundle-ManifestVersion: 2
+Bundle-Name: Cache Management Bundle
+Bundle-SymbolicName: com.cacheManagement.cache-management
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-3.3.0.201609221906

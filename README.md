@@ -1,30 +1,13 @@
-# Cache Management
+Dispatcher Caching based on Resource Types
 
-This a content package project generated using the AEM Multimodule Lazybones template.
+How to implement TTL based on Resource Type ?
 
-## Building
+### Create a custom OSGI configuration.
+Categorise all the page templates that are part of your platform into various groups and assess their caching requirements. 
+Maintain a list of page templates & its corresponding max-age in an OSGI. A good example would be to categorise templates into 3 groups cached for 0, 900 & 3600 seconds respectively.
 
-This project uses Maven for building. Common commands:
+### Create a custom filter.  
+When a request hits publisher, this Filter will evaluate the TTL(time-to-live) based on above Cache Control OSGI configuration and set the required cache-control max-age response headers. When the response is returned to end-user via various outbound systems in the architecture like Dispatcher and CDN, same response header will be respected for caching content with right cache expiry details. We can also set max-age as 0 in order to deny caching.
 
-From the root directory, run ``mvn -PautoInstallPackage clean install`` to build the bundle and content package and install to a CQ instance.
-
-From the bundle directory, run ``mvn -PautoInstallBundle clean install`` to build *just* the bundle and install to a CQ instance.
-
-## Using with AEM Developer Tools for Eclipse
-
-To use this project with the AEM Developer Tools for Eclipse, import the generated Maven projects via the Import:Maven:Existing Maven Projects wizard. Then enable the Content Package facet on the _content_ project by right-clicking on the project, then select Configure, then Convert to Content Package... In the resulting dialog, select _src/main/content_ as the Content Sync Root.
-
-## Using with VLT
-
-To use vlt with this project, first build and install the package to your local CQ instance as described above. Then cd to `content/src/main/content/jcr_root` and run
-
-    vlt --credentials admin:admin checkout -f ../META-INF/vault/filter.xml --force http://localhost:4502/crx
-
-Once the working copy is created, you can use the normal ``vlt up`` and ``vlt ci`` commands.
-
-## Specifying CRX Host/Port
-
-The CRX host and port can be specified on the command line with:
-mvn -Dcrx.host=otherhost -Dcrx.port=5502 <goals>
-
+For demo purpose, we have used We-Retail OOTB templates in the Cache Control OSGI.
 

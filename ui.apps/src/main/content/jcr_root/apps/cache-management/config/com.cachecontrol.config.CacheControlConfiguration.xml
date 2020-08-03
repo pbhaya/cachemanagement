@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="sling:OsgiConfig"
-          page.template.group.1="[/apps/A/templates/A,/apps/A/templates/B]"
+          page.template.group.1="[/conf/we-retail/settings/wcm/templates/product-page,/conf/we-retail/settings/wcm/templates/section-page]"
           max.age.page.template.group.1="{Long}900"
-          page.template.group.2="[/apps/XX/templates/XX]"
+          page.template.group.2="[/conf/we-retail/settings/wcm/templates/hero-page, /conf/we-retail/settings/wcm/templates/content-page]"
           max.age.page.template.group.2="{Long}3600"
-          no.cache.page.templates="[/apps/XX/templates/XZZZ]"/>
+          no.cache.page.templates="[/conf/we-retail/settings/wcm/templates/experience-page"/>
